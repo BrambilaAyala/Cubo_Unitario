@@ -27,7 +27,7 @@ En este script:
 
 1. Asegúrate de tener Python 3 instalado.
    1.1 Ejecutar: python Grafo.py 
-2. Instala las dependencias necesarias (si aún no lo has hecho):
+2. Instalar las dependencias:
 
 ```bash
 pip install numpy
