@@ -1,8 +1,7 @@
-# Reimportar librerías tras reinicio del entorno
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Los puntos proyectados proporcionados por el usuario (proyección axonométrica trimétrica)
+#Vertices
 vertices_proj = np.array([
     [0.000, 0.000, 0.000],     # a'
     [0.558, -0.036, -0.496],    # b'
@@ -14,21 +13,20 @@ vertices_proj = np.array([
     [0.411, 0.088, 0.414]      # h'
 ])
 
-# Conectividad de las aristas del cubo
+# Conexiones de las aristas
 edges = [
     (0, 1), (1, 2), (2, 3), (3, 0),  # base
     (4, 5), (5, 6), (6, 7), (7, 4),  # parte superior
     (0, 4), (1, 5), (2, 6), (3, 7)   # verticales
 ]
 
-# Dibujar la proyección con los puntos dados
+# Dibujar la proyeccion de los puntos
 fig, ax = plt.subplots(figsize=(6, 6))
 for start, end in edges:
     x_coords = [vertices_proj[start][0], vertices_proj[end][0]]
     y_coords = [vertices_proj[start][1], vertices_proj[end][1]]
     ax.plot(x_coords, y_coords, 'k')
 
-# Etiquetas de los vértices
 labels = ["a'", "b'", "c'", "d'", "e'", "f'", "g'", "h'"]
 for i, (x, y, _) in enumerate(vertices_proj):
     ax.text(x, y, labels[i], fontsize=10, color='blue')
