@@ -36,5 +36,6 @@ pip install matplotlib
 ```
 ## 📊 Resultado Gráfico
 
-![Proyección Axonométrica Trimétrica del Cubo](./Captura de pantalla 2025-05-20 164338.png)
+![Proyección Axonométrica Trimétrica del Cubo](./Captura%20de%20pantalla%202025-05-20%20164338.png)
+
 
