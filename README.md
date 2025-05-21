@@ -33,3 +33,8 @@ En este script:
 pip install numpy
 pip install matplotlib
 
+```
+## 📊 Resultado Gráfico
+
+![Proyección Axonométrica Trimétrica del Cubo](Captura de pantalla 2025-05-20 164338.png)
+
